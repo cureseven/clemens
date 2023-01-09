@@ -16,9 +16,11 @@ func main() {
 		title:	"初めてのアイディア",
 		body:	"初々しいよ.",
 	}
-	idea.Get(1)
+	tmp := idea.Get(1)
+	fmt.Println(tmp.id)
 }
 
-func (self *Idea) Get(id int64) () {
-	fmt.Println("title: ", self.title)
+func (self *Idea) Get(id int64) (*Idea) {
+	return self
 }
+
