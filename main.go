@@ -2,8 +2,15 @@ package main
 
 import (
 	"fmt"
+	"github.com/cureseven/clemens"
 )
 
 func main() {
-	fmt.Println("Hello, W0rld!!")
+	idea := clemens.Idea{
+		id:	1,
+		title:	"初めてのアイディア",
+		body:	"初々しいよ.",
+	}
+	tmp := idea.Get(1)
+	fmt.Println(tmp.id)
 }
