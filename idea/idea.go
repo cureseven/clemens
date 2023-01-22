@@ -1,11 +1,11 @@
 package main
 
-type Idea struct {
+type idea struct {
 	id    int64
 	title string
 	body  string
 }
 
-func (self *Idea) Get(id int64) *Idea {
+func (self *idea) Get(id int64) *idea {
 	return self
 }

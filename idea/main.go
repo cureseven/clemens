@@ -5,11 +5,12 @@ import (
 )
 
 func main() {
-	idea := Idea{
+	i := idea{
 		id:    1,
-		title: "初めてのアイディア",
-		body:  "初々しいよ.",
+		title: "テストタイトル",
+		body:  "テストボディ",
 	}
-	tmp := idea.Get(1)
-	fmt.Println(tmp.id)
+	tmp := *i.Get(1)
+	fmt.Println(tmp.title)
+	fmt.Println(tmp.body)
 }

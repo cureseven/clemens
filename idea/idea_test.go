@@ -5,7 +5,7 @@ import (
 )
 
 func TestGet(t *testing.T) {
-	testIdea := Idea{
+	testIdea := idea{
 		id:    1,
 		title: "テストタイトル",
 		body:  "テストボディ",
